@@ -24,13 +24,20 @@ $myfavmovie = urlencode("Real Madrid");
 echo "<a href='misEquipos.php?favmovie=$myfavmovie'>";
 echo "Pulsa aqui para conocer mi equipo de futbol"; 
 echo "</a>";
+
+echo "Cookies registradas";
+setcookie("TestCookie1", $myfavmovie, time()+100);
+
+
+echo "<p> $myfavmovie</p>";
+
+
 ?>
 <br/>
 
 <br/>
 </body>
 </html>
-
 
 
 
